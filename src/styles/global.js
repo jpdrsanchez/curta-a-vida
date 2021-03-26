@@ -8,15 +8,21 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     /* Typography */
-    --main-font: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --main-title: 'Satisfy', cursive;
+    --main-text: 'Quicksand', sans-serif;
 
     /* Colors */
-    --black: #222;
+    --pink: #e496a9;
+    --grey: #374352;
+    --black-green: #626780;
+    --green: #6c7c7a;
+    --green-1: #bed1ce;
     --white: #fff;
+    --body-bg: #f9f9f9;
 
     /* Units */
     --gutter: .9375rem; // 15px
-    --container-xl: 71.25rem; // 1140px
+    --container-xl: 75rem; // 1140px
     --container-lg: 60rem; // 960px
     --container-md: 45rem; // 720px
     --container-sm: 33.75rem; // 540px
@@ -33,12 +39,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    color: var(--black);
-    font-family: var(--main-font);
+    background-color: var(--body-bg);
+    color: var(--grey);
+    font-family: var(--main-text);
+    background-image: url('/images/body-detail.svg');
+    background-position: left bottom -250px;
+    background-repeat: no-repeat;
   }
 
   a {
-    color: var(--black);
+    color: var(--grey);
     text-decoration: none;
   }
 

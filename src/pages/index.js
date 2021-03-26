@@ -1,13 +1,14 @@
-import Container from '../components/Container';
-import Text from '../components/Text';
-import Title from '../components/Title';
+import Hero from '../components/Hero';
+import HomeBlog from '../components/HomeBlog';
+import HomeSection from '../components/HomeSection';
 
 const Home = () => {
   return (
-    <Container>
-      <Title>My NextJS - Starter Template</Title>
-      <Text>NextJS | ReactJS | Styled Components</Text>
-    </Container>
+    <main>
+      <Hero />
+      <HomeBlog />
+      <HomeSection />
+    </main>
   );
 };
 

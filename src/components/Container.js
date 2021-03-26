@@ -6,8 +6,11 @@ const Wrapper = styled.div`
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: calc(var(--gutter) * 2);
-  padding-right: calc(var(--gutter) * 2);
+
+  @media (max-width: 35.9375em) {
+    padding-left: calc(var(--gutter) * 2);
+    padding-right: calc(var(--gutter) * 2);
+  }
 
   @media (min-width: 36em) {
     max-width: var(--container-sm);
@@ -21,13 +24,13 @@ const Wrapper = styled.div`
     max-width: var(--container-lg);
   }
 
-  @media (min-width: 75em) {
+  @media (min-width: 77em) {
     max-width: var(--container-xl);
   }
 `;
 
-const Container = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const Container = ({ children, className }) => {
+  return <Wrapper className={className}>{children}</Wrapper>;
 };
 
 export default Container;
